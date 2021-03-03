@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3F51B5"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welome To Home Page"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logged in as : "
+            android:textColor="#CDDC39"
+            android:id="@+id/tv_loggedInAs"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF5722"
+            android:layout_toRightOf="@+id/tv_loggedInAs"
+            android:text=""
+            android:id="@+id/tv_fromServer"
+            ></TextView>
+
+        <Button
+
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_loggedInAs"
+            android:text="LOGOUT"
+            android:id="@+id/btn_logout"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
